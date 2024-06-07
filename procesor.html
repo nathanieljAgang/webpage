@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <script type="text/javascript">
+         let queryString = window.location.search;
+        let queryStringParams = new URLSearchParams(queryString);
+        document.write("student name: ",queryStringParams.get("txtStudentName"),"</br>");
+        document.write("Email: ",queryStringParams.get("txtStudentEmail"),"</br>");
+        document.write("student password: ",queryStringParams.get("pwdStudent"),
+        "</br>");
+        document.write("student comfim password: ",queryStringParams.get("cpwdStudent"),
+        "</br>");
+        document.write("Student phone Number : ",queryStringParams.get("txtbStudentPhonenumber"),
+        "</br>");
+        document.write("studen qualification : ",queryStringParams.get("slctStudentQualification"),
+        "</br>");
+        
+    </script>
+</body>
+</html>
