@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    perspective: 2000px;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    transform-style: preserve-3d;
+    animation: CircleRotate 5s linear 0s infinite;
+}
+@keyframes CircleRotate {
+    0% {
+        transform: rotatey(0deg);
+    }
+    50% {
+        transform: rotatey(180deg);
+    }
+    100% {
+        transform: rotatey(360deg);
+    }
+}
+.circle div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px dashed rgba(252, 248, 248, 0.3);
+    border-top: 2px dashed rgba(0, 0, 0, 0);
+   margin-top: -135px;
+    
+}
+.circle div:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -108%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: inherit;
+    border-left: 90px solid rgba(0, 0, 0, 0);
+    border-top: 90px solid rgba(0, 0, 0, 0);
+    width: 0;
+    height: 0;
+    animation: psudoRotate 2s linear 0s infinite alternate;
+}
+@keyframes psudoRotate {
+    0% {
+        transform: rotate(0deg);
+      }
+      10%{
+        background-color: purple;
+      }
+      15%{
+        background-color: rgb(223, 92, 4);
+      }
+      20%{
+        background-color:coral;
+      }
+      25% {
+        background-color: yellow;
+      }
+      50% {
+        background-color: coral;
+      }
+      55%{
+        background-color: purple;
+      }
+      60%{
+        background-color: pink;
+      }
+      65%{
+        background-color: rgb(230, 178, 7);
+      }
+      70%{
+        background-color: purple;
+      }
+      75%{
+        background-color: white;
+      }
+      80%{
+        background-color: coral;
+      }
+      85%{
+        background-color: purple;
+      }
+      90%{
+        background-color: coral;
+      }
+
+      100% {
+        transform: rotate(-360deg);
+      }
+}

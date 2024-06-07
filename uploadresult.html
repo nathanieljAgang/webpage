@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Results</title>
+    <style>
+        /* Add your custom styles here */
+/* styles.css */
+
+/* Style the form container */
+#uploadForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the file input */
+#resultFile {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the upload button */
+button[type="submit"] {
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the success message */
+#successMessage {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2ECC40;
+}
+
+    </style>
+</head>
+<body>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="resultFile" id="resultFile">
+        <button type="submit">Upload</button>
+    </form>
+    <div id="successMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

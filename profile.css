@@ -1,0 +1,12 @@
+/* Add your CSS styles here */
+/* For example: */
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+}
